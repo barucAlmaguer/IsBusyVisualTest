@@ -5,11 +5,12 @@
              xmlns:local="clr-namespace:IsBusyVisualTest" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:IsBusyVisualTest.Views"
              xmlns:vm="clr-namespace:IsBusyVisualTest.ViewModel"
              d1p1:Ignorable="d">
     <Application.Resources>
-    <ResourceDictionary>
-      <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
-    </ResourceDictionary>
+        <ResourceDictionary>
+            <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:IsBusyVisualTest.ViewModel"/>
+        </ResourceDictionary>
   </Application.Resources>
 </Application>

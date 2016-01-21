@@ -24,25 +24,16 @@ namespace IsBusyVisualTest.ViewModel
     /// </summary>
     public class ViewModelLocator
     {
+        private static IsBusy_ViewModel _isBusy_VM;
         /// <summary>
         /// Initializes a new instance of the ViewModelLocator class.
         /// </summary>
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-
-            ////if (ViewModelBase.IsInDesignModeStatic)
-            ////{
-            ////    // Create design time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DesignDataService>();
-            ////}
-            ////else
-            ////{
-            ////    // Create run time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DataService>();
-            ////}
-
             SimpleIoc.Default.Register<MainViewModel>();
+
+            _isBusy_VM = new IsBusy_ViewModel();
         }
 
         public MainViewModel Main
@@ -51,6 +42,11 @@ namespace IsBusyVisualTest.ViewModel
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
+        }
+
+        public IsBusy_ViewModel isBusy_VM
+        {
+            get { return _isBusy_VM; }
         }
         
         public static void Cleanup()

@@ -1,0 +1,17 @@
+﻿<Window x:Class="IsBusyVisualTest.Views.ComplexView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IsBusyVisualTest.Views"
+        xmlns:vm="clr-namespace:IsBusyVisualTest.ViewModel"
+        mc:Ignorable="d"
+        Title="ComplexView" Height="300" Width="300" SizeToContent="WidthAndHeight"
+        d:DataContext="{Binding isBusy_VM, Source={StaticResource Locator}}"
+        DataContext="{Binding isBusy_VM, Source={StaticResource Locator}}">
+    <StackPanel>
+        <Button Width="50" Margin="10" HorizontalAlignment="Center" Command="{Binding DoWork}">Run!</Button>
+        <TextBlock Width="100" Margin="10" HorizontalAlignment="Center" Text="{Binding Name, Mode=OneWay}"/>
+        <ProgressBar Height="20" Margin="20" Minimum="0" Maximum="100" IsEnabled="{Binding isBusy}" Value="{Binding progress, Mode=OneWay}"></ProgressBar>
+    </StackPanel>
+</Window>

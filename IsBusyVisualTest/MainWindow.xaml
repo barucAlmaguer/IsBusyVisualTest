@@ -4,9 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IsBusyVisualTest"
+        xmlns:vm="clr-namespace:IsBusyVisualTest.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="525" SizeToContent="WidthAndHeight">
+    <StackPanel>
+        <Button Width="Auto" Margin="10" HorizontalAlignment="Center" Click="Button_Click">Vista simple</Button>
+        <Button Width="Auto" Margin="10" HorizontalAlignment="Center" Click="Button_Click_1">Vista elaborada</Button>
+    </StackPanel>
 </Window>

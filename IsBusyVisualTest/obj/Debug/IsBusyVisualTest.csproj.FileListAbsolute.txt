@@ -27,3 +27,7 @@ C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\
 C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\Debug\IsBusyVisualTest.csproj.GenerateResource.Cache
 C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\Debug\IsBusyVisualTest.exe
 C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\Debug\IsBusyVisualTest.pdb
+C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\Debug\Views\ComplexView.g.cs
+C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\Debug\Views\SimpleView.g.cs
+C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\Debug\Views\ComplexView.baml
+C:\Users\rafaelbaruc\Documents\GitHub\WPF\IsBusyVisualTest\IsBusyVisualTest\obj\Debug\Views\SimpleView.baml

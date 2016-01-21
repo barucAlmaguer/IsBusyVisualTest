@@ -24,5 +24,17 @@ namespace IsBusyVisualTest
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var w = new Views.SimpleView();
+            w.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var w = new Views.ComplexView();
+            w.Show();
+        }
     }
 }
